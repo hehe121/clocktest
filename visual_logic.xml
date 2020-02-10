@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="Init" type="InitTab" active="false" scrollx="284.5" scrolly="341.5" scale="0.9"></tab>
-  <tab name="Main" type="MainTab" active="true" scrollx="-8.03914262379567" scrolly="448.1857043153327" scale="0.45811152199139993">
+  <tab name="Main" type="MainTab" active="true" scrollx="286" scrolly="368" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="qHCub|{@OW}j|V],s61p" x="-250" y="-410">
       <statement name="DO">
         <block type="setObjTransform" id="T0-h,/ww5@*8.?KB3Ua$">
@@ -200,7 +200,7 @@
                     <block type="setTimeout" id="7;|!Nt6u|Q:HlPY.-!J]">
                       <value name="VALUE">
                         <shadow type="math_number" id="bvW{nL/INv/hT!DzFWdV">
-                          <field name="NUM">5</field>
+                          <field name="NUM">10</field>
                         </shadow>
                       </value>
                       <statement name="DO">
