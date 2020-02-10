@@ -1,0 +1,248 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="284.5" scrolly="341.5" scale="0.9"></tab>
+  <tab name="Main" type="MainTab" active="true" scrollx="-8.03914262379567" scrolly="448.1857043153327" scale="0.45811152199139993">
+    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="qHCub|{@OW}j|V],s61p" x="-250" y="-410">
+      <statement name="DO">
+        <block type="setObjTransform" id="T0-h,/ww5@*8.?KB3Ua$">
+          <field name="MODE">rotation</field>
+          <field name="OFFSET">FALSE</field>
+          <value name="TARGETOBJ">
+            <block type="text" id="UWaD-FF+SRxo]![xEAPl">
+              <field name="TEXT">hour</field>
+            </block>
+          </value>
+          <value name="Y">
+            <block type="math_arithmetic" id="NDZYDj78Bi=1:iE6tU^-">
+              <field name="OP">MULTIPLY</field>
+              <value name="A">
+                <shadow type="math_number" id="-3tLP@)|Nn3U|sdN;xL7">
+                  <field name="NUM">360</field>
+                </shadow>
+                <block type="math_arithmetic" id="y^O-Sk6`d8^6VoX(/$:%">
+                  <field name="OP">DIVIDE</field>
+                  <value name="A">
+                    <shadow type="math_number" id="MT*`0`*zbDC5O`V8tA,;">
+                      <field name="NUM">360</field>
+                    </shadow>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="ql?tglR{uo?|]/Y*ec(g">
+                      <field name="NUM">12</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="3MB^n/8YabT-TwBO;`#n">
+                  <field name="NUM">24</field>
+                </shadow>
+                <block type="getDateTime" id=";69V%ofGs7!OH=ubE#pR">
+                  <field name="TYPE">HOURS</field>
+                  <field name="GMT">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setObjTransform" id="svXKr;SFFlrtOv%z3KOw">
+              <field name="MODE">rotation</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <block type="text" id="wCII45T?/wwu}$BFn7bf">
+                  <field name="TEXT">minute</field>
+                </block>
+              </value>
+              <value name="Y">
+                <block type="math_arithmetic" id="gQS_6@OGy#J5Uga*~FJ{">
+                  <field name="OP">ADD</field>
+                  <value name="A">
+                    <shadow type="math_number" id="sz5fg([8lQ$sRlY`CVZ%">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="o`3{H~rD7D;u.^Q|h(]H">
+                      <field name="OP">MULTIPLY</field>
+                      <value name="A">
+                        <shadow type="math_number">
+                          <field name="NUM">360</field>
+                        </shadow>
+                        <block type="math_arithmetic" id=",?3t!b-cm[/i$E}=FpGi">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number" id="5JSlBoggh^S(utS=z.O+">
+                              <field name="NUM">360</field>
+                            </shadow>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="([zsYK@+f97iCI}A$1y}">
+                              <field name="NUM">60</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number">
+                          <field name="NUM">24</field>
+                        </shadow>
+                        <block type="getDateTime" id=";mhD3H.:waapk/:Alc^!">
+                          <field name="TYPE">MINUTES</field>
+                          <field name="GMT">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="QJ/spB/GjD~:jhehVUPq">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="*p5#W_nbJ=SX[3q7EB)Z">
+                      <field name="OP">MULTIPLY</field>
+                      <value name="A">
+                        <shadow type="math_number" id="=vghFSA%?Nx?+E?OKV`/">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="getDateTime" id="~8Hxy,`2p%8!7y$f)sT}">
+                          <field name="TYPE">SECONDS</field>
+                          <field name="GMT">FALSE</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="94aftA+ixBa.n*MmtJ5:">
+                          <field name="NUM">0.1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setObjTransform" id="tpsBq3u`ZZCrEbb/*h6r">
+                  <field name="MODE">rotation</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <block type="text" id="etvSvWRIdqZD*BK-f]+g">
+                      <field name="TEXT">sec</field>
+                    </block>
+                  </value>
+                  <value name="Y">
+                    <block type="math_arithmetic" id="qfCh|el_e;k;1QDT[j6!">
+                      <field name="OP">MULTIPLY</field>
+                      <value name="A">
+                        <shadow type="math_number">
+                          <field name="NUM">360</field>
+                        </shadow>
+                        <block type="math_arithmetic" id="7gk?:$~cYvPTm.eYq%Gn">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number" id="*z#dl5/`X1So{b#?XJ1a">
+                              <field name="NUM">360</field>
+                            </shadow>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="eR?9,p29VCgVOlCv22Z@">
+                              <field name="NUM">60</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="Rb8R[n~[9pOH36|^9M*F">
+                          <field name="NUM">24</field>
+                        </shadow>
+                        <block type="getDateTime" id="=P;8qWG}Yl;j7s|$3xX)">
+                          <field name="TYPE">SECONDS</field>
+                          <field name="GMT">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="setInterval" id="m0spgJh;AmKdN,9{%7/n">
+          <value name="VALUE">
+            <shadow type="math_number" id="}5X4C*?a6wg-3d6eTH~U">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="volume" id="F]T-3IKS-ohH01`bLR(@">
+              <value name="VALUE">
+                <block type="loadSoundAdv" id="e?zoB4q~evO-#;_]+UZQ">
+                  <value name="URL">
+                    <shadow type="text" id="N@,:6(D7UZ{#H,j!8Nvx">
+                      <field name="TEXT">02.WAV</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="VOLUME">
+                <shadow type="math_number" id="NQ~C`3sHds7vc~|uR0)q">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="playSound" id="X*!,34X1kIg+B4iE^p+r">
+                  <field name="LOOP">FALSE</field>
+                  <value name="VALUE">
+                    <block type="loadSoundAdv" id="(3g0?.@kAgb_+a7}7L^c">
+                      <value name="URL">
+                        <shadow type="text" id="}k?}]6_3)MgOjCv^ZQAx">
+                          <field name="TEXT">02.WAV</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id="7;|!Nt6u|Q:HlPY.-!J]">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="bvW{nL/INv/hT!DzFWdV">
+                          <field name="NUM">5</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="volume" id="7B5,ElrxlB!BIMLRdnN^">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="JK[=]zd8SyHTx[~lM#j)">
+                              <value name="URL">
+                                <shadow type="text" id="9IBlHBGWK,SxZJSUn}V=">
+                                  <field name="TEXT">02.WAV</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="VOLUME">
+                            <shadow type="math_number" id=",~5zD;.O!DSR92tyrNLu">
+                              <field name="NUM">0</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="math_arithmetic" id="upbDwUE$:OI`[Q;fgh%r" x="370" y="10">
+      <field name="OP">DIVIDE</field>
+      <value name="A">
+        <shadow type="math_number" id="n1bY)#NULNE3!inf8*aE">
+          <field name="NUM">6</field>
+        </shadow>
+      </value>
+      <value name="B">
+        <shadow type="math_number" id="ejy`6V!=kga(jM@~^GO2">
+          <field name="NUM">60</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings width="700" height="683"></editorsettings>
+</xml>
